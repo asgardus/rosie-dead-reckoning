@@ -7,7 +7,7 @@ project(rosie-dead-reckoning)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS roscpp std_msgs phidgets geometry_msgs)
+find_package(catkin REQUIRED COMPONENTS roscpp std_msgs phidgets phidgets_imu geometry_msgs)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -100,7 +100,7 @@ find_package(catkin REQUIRED COMPONENTS roscpp std_msgs phidgets geometry_msgs)
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
   DEPENDS
-  CATKIN_DEPENDS roscpp std_msgs phidgets geometry_msgs
+  CATKIN_DEPENDS roscpp std_msgs phidgets phidgets_imu geometry_msgs
   LIBRARIES
 )
 
@@ -196,4 +196,4 @@ include_directories(
 
 add_executable(rosie_dead_reckoning src/deadreckon.cpp)
 target_link_libraries(rosie_dead_reckoning ${catkin_LIBRARIES})
-add_dependencies(rosie_dead_reckoning std_msgs phidgets geometry_msgs)
+add_dependencies(rosie_dead_reckoning std_msgs phidgets phidgets_imu geometry_msgs)

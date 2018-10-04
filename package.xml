@@ -54,10 +54,12 @@
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
   <build_depend>phidgets</build_depend>
+  <build_depend>phidgets_imu</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>phidgets</exec_depend>
+  <exec_depend>phidgets_imu</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
 
 
